@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html,
+  body {
+  }
+}
+
+@layer components {
+  .grid-paddings {
+    @apply 2xl:p-6 xl:p-4 p-3
+  }
+
+  .awesome-grid {
+    @apply grid 2xl:grid-cols-6 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 2xl:gap-4 gap-3 grid-paddings;
+  }
+}

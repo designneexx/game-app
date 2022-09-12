@@ -1,0 +1,12 @@
+const themes = require('./src/public/themes.json')
+
+module.exports = {
+  content: ['./public/index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes,
+  },
+}
